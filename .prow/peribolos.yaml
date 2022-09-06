@@ -2,7 +2,7 @@ presubmits:
   falcosecurity/evolution:
     - name: peribolos-pre-submit
       branches:
-        - ^master$
+        - ^main$
       decorate: true
       max_concurrency: 1
       skip_report: false
@@ -38,7 +38,7 @@ postsubmits:
   falcosecurity/evolution:
     - name: peribolos-post-submit
       branches:
-        - ^master$
+        - ^main$
       decorate: true
       max_concurrency: 1
       skip_report: false
@@ -81,7 +81,7 @@ periodics:
     extra_refs:
       - org: falcosecurity
         repo: evolution 
-        base_ref: master
+        base_ref: main
     spec:
       containers:
         - image: gcr.io/k8s-prow/peribolos:v20220901-5db9cf5fa2
